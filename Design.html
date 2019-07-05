@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+    <link href = "Navbar.css" rel = "stylesheet" type = "text/css">
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <div class="tab">
+    <button class="tablinks" onclick="openMenu(event, 'Comments')">Comments</button>
+    <button class="tablinks" onclick="openMenu(event, 'Images')">Images</button>
+    <button class="tablinks" onclick="openMenu(event, 'Posts')">Posts</button>
+    <button class="tablinks" onclick="openMenu(event, 'Users')">Users</button>
+  </div>
+
+  <div id="Comments" class="tabs">
+    <span onclick="this.parentElement.style.display='none'">x</span>
+    <h2 style="font-family:Verdana; color:rgb(102,0,51);" >Comments</h2>
+    <section>
+      <div style="overflow-x:auto;">
+      <table id="commentsTable">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Body</th>
+        </tr>
+      </table></div>
+    </section>
+
+  </div>
+
+  <div id="Images" class="tabs">
+    <span onclick="this.parentElement.style.display='none'">x</span>
+    <h2 style="font-family:Verdana; color:rgb(102,0,51);">Images</h2>
+    <section>
+      <div id="photosTable">
+
+      </div>
+    </section>
+
+
+  </div>
+
+  <div id="Posts" class="tabs">
+    <span onclick="this.parentElement.style.display='none'">x</span>
+    <h2 style="font-family:Verdana; color:rgb(102,0,51);">Posts</h2>
+    <section>
+      <div style="overflow-x:auto;">
+      <table id="postsTable">
+        <tr>
+          <th>Title</th>
+          <th>Body</th>
+        </tr>
+      </table></div>
+    </section>
+</div>
+
+  <div id="Users" class="tabs">
+    <span onclick="this.parentElement.style.display='none'">x</span>
+    <h2 style="font-family:Verdana; color:rgb(102,0,51);">Users</h2>
+    <section>
+      <div style="overflow-x:auto;">
+      <table id="usersTable">
+        <tr>
+          <th>Username</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Website</th>
+        </tr>
+      </table>
+      </div>
+    </section>
+
+  </div>
+
+
+<script src = "Navbar.js" type = "text/javascript"></script>
+</body>
+</html>
